@@ -1,3 +1,5 @@
+let lottery.address = '0x8e1976637c71e4fb2bb2350fe752b3dd4b3e053c';
+
 App = {
   web3Provider: null,
   contracts: {},
@@ -14,7 +16,7 @@ App = {
     } else {
       // set the provider you want from Web3.providers
       // App.web3Provider = new Web3.providers.HttpProvider('http://127.0.0.1:8545');
-      App.web3Provider = new Web3.providers.HttpProvider('https://mainnet.infura.io/');
+      App.web3Provider = new Web3.providers.HttpProvider('https://ropsten.infura.io/');
       web3 = new Web3(App.web3Provider);
     }
 
